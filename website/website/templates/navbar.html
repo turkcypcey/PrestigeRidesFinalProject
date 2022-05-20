@@ -1,3 +1,23 @@
+<!DOCTYPE html>  
+<html>
+    <head>
+
+        <title></title> 
+    </head>
+    <body>
+        <img src="logo.PNG"
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">contact Us</a></li>
+                    
+            </ul>
+        </nav>
+
+    </body>
 <div>
     {% url 'index' as index_url %}
     <span>{% if request.path == index_url %}Home{% else %}<a href="{{ index_url }}">Home</a>{% endif %}</span>
@@ -11,3 +31,4 @@
     {% url 'contactUs' as contactUs_url %}
     <span>{% if request.path == contactUs_url %}Contact Us{% else %}<a href="{{ contactUs_url }}">Contact Us</a>{% endif %}</span>
 </div>
+</html>
