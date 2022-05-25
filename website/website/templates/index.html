@@ -3,7 +3,35 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<h1>
-    Prestige Rides 
-</h1>
+{% load static %}
+<div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'homeslider/ferrari.png' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'homeslider/lamborghini.png' %}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'homeslider/porsche911.png' %}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="row align-items-center pb-5 pt-5">
+        <div class="col">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a odio sed quam efficitur mollis. Nunc non eros commodo, molestie leo volutpat, vehicula diam. Aliquam massa nunc, blandit et auctor nec, pulvinar vel purus. Donec dignissim nisi lacus, non euismod odio efficitur et. Nam lobortis sem ac ante elementum consectetur. Aliquam eu diam nisl. Nulla orci turpis, dictum lobortis libero a, semper hendrerit augue.</p>
+          <p>Nulla rhoncus orci in sollicitudin pretium. Nunc id velit sed nisl tempus dapibus. Suspendisse lacinia sed mauris vel pulvinar. Etiam efficitur fringilla nisi sit amet luctus. Vivamus maximus odio ac maximus auctor. Proin vulputate ligula sit amet felis sollicitudin dignissim. Maecenas mattis nibh in elit blandit, eget sodales quam luctus. Sed eget volutpat diam. Praesent pulvinar odio quis ex finibus, ut ullamcorper odio tincidunt. Aliquam vulputate, tellus sed fringilla faucibus, odio sem tempus eros, in lacinia enim leo in ante. Phasellus a purus porta leo feugiat ornare. Sed vitae tellus hendrerit, varius neque eu, pretium lectus.</p>
+        </div>
+      </div>
+</div>
+
 {% endblock %}

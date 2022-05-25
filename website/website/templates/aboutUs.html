@@ -3,7 +3,25 @@
 {% block title %}About Us{% endblock %}
 
 {% block content %}
-<h1>
-    About Us
-</h1>
+{% load static %}
+<section class="py-5 container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8">
+        <h1>About Us</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a odio sed quam efficitur mollis. Nunc non eros commodo, molestie leo volutpat, vehicula diam. Aliquam massa nunc, blandit et auctor nec, pulvinar vel purus. Donec dignissim nisi lacus, non euismod odio efficitur et. Nam lobortis sem ac ante elementum consectetur. Aliquam eu diam nisl. Nulla orci turpis, dictum lobortis libero a, semper hendrerit augue.</p>
+      </div>
+    <div class="col-lg-6 col-md-6 text-center">
+        <img src="{% static 'carsalesman.jpg' %}" alt="" style="width:100%;">
+    </div>
+</div>
+<div class="row py-lg-5">
+    <div class="col-lg-6 col-md-6 text-center">
+        <img src="{% static 'carshowroom.jpg' %}" alt="" style="width:100%;">
+    </div>
+    <div class="col-lg-6 col-md-8">
+      <p class="lead">Nulla rhoncus orci in sollicitudin pretium. Nunc id velit sed nisl tempus dapibus. Suspendisse lacinia sed mauris vel pulvinar. Etiam efficitur fringilla nisi sit amet luctus. Vivamus maximus odio ac maximus auctor. Proin vulputate ligula sit amet felis sollicitudin dignissim. Maecenas mattis nibh in elit blandit, eget sodales quam luctus. Sed eget volutpat diam. Praesent pulvinar odio quis ex finibus, ut ullamcorper odio tincidunt. Aliquam vulputate, tellus sed fringilla faucibus, odio sem tempus eros, in lacinia enim leo in ante. Phasellus a purus porta leo feugiat ornare. Sed vitae tellus hendrerit, varius neque eu, pretium lectus.</p>
+      <p class="lead">Suspendisse ac eros scelerisque, condimentum lacus in, bibendum purus. Etiam eleifend turpis est. Quisque aliquet venenatis justo a tempus. Nullam scelerisque tellus odio, ut commodo diam blandit quis. Maecenas auctor arcu sed diam ullamcorper, lobortis pulvinar purus mollis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at scelerisque elit. Nunc vel lobortis nisi, sit amet rutrum lectus.</p>
+    </div>
+</div>
+  </section>
 {% endblock %}
